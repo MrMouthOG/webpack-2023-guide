@@ -1,0 +1,38 @@
+.button {
+  background-color: red;
+  margin-right: 20px;
+  border: none;
+  border-radius: 6px;
+  color: whitesmoke;
+  transition: all 0.8 ease-in-out;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &:active {
+    animation: btnRotate .5s;
+  }
+}
+
+@keyframes btnRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
